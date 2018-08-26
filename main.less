@@ -1,0 +1,181 @@
+@pColor1: #A1CDA8;
+@pColor2: rgb(140, 252, 106);
+@pColor3: rgb(255, 218, 117);
+@imgHeight: 200px;
+
+.primary1 {
+    background-color: @pColor1;
+}
+
+.primary2 {
+    background-color: @pColor2;
+}
+
+.primary3 {
+    background-color: @pColor3;
+}
+
+.round-borders{
+    border-radius: 5px;
+
+}
+
+#homescreenlogo {
+    margin-top: 190px; /* Half the height */
+    margin-bottom: 190px; /* Half the width */
+    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+ }
+
+body {
+    font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: black;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+#buttonContactUs {
+    background-color: rgb(246, 255, 115);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#contactform {
+    background-color: lighten(gray,30%);
+}
+
+.inputLabel {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input.inputField {
+    padding: 5px;
+    border: 1px solid orange;
+}
+
+.navbar {
+    .primary3;
+    li {
+        font-size: 24px;
+        float: left;
+        position: relative;
+        text-align: center;
+
+        a:hover {
+            text-decoration: underline; 
+        }
+    }
+
+    .navbar {
+        .navbar-collapse {
+            text-align: center;
+        }
+    }
+}
+
+.container {
+    .sidebar {
+        border: 2px solid @pColor2;
+        width: 100%;
+        margin-bottom:50px;
+        .primary1;
+
+        h3 {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        a {
+            font-size: 18px;
+        }
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(5px 5px 5px #222);
+    }
+
+    .productImg {
+        height: @imgHeight;
+    }
+
+    .row {
+        margin: 25px;
+    }
+
+    .items1 {
+        .primary1;
+        .round-borders;
+        border: 2px solid rgb(255, 255, 255);
+        width: 100%;
+        color: white;
+        text-shadow: 1px 1px 2px black, 0 0 5px darkblue;
+        
+        img {
+            -webkit-filter: drop-shadow(5px 5px 5px #222);
+            filter: drop-shadow(5px 5px 5px #222);
+        }
+    }
+
+    .items2 {
+        .primary3;
+        .round-borders;
+    }
+
+    h2 {
+        font-weight: bold;
+    }
+    
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    display:block;
+    .primary3;
+    text-align: center;
+    padding-top: 1%;
+}
+
+@media only screen and (max-width: 820px) {
+    .deviceWidth {
+        width:280px; 
+        padding:0;
+    }	
+    .center {
+        text-align: center;
+    }
+    img {
+        max-width: 80%;
+        max-height: 80%;
+        text-align: center;
+    }
+    .navbar li {
+        font-size: 16px;
+    }
+    .navbar-brand {
+        width: 180px;
+    }
+}

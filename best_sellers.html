@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TLH Supermarket Best Sellers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="mustache.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <a href="index.html" class="col-sm-3 navbar-brand">
+            <img src="images/logo4.png" alt="TLH Supermarket" role="link" style="width:200px;">
+        </a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse col-sm-6" id="navMenu">
+            <ul class = "navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a href="products_produce.html" class="nav-link" role="link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link" role="link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="best_sellers.html" class="nav-link" role="link">Best Sellers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="directions.html" class="nav-link" role="link">Directions</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link" role="link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link" role="link">Contact Us</a>
+                </li>                
+            </ul>
+        </div>
+
+    </nav> 
+    <!--end of Navigation bar-->
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2 style="text-align: center;">Mangos</h2>
+            </div>
+            <div class = "col-sm-4">
+                <img src="https://media.healthination.com/media/articles/image/heres-how-to-pick-a-ripe-mango.png"/>
+            </div>
+            <div class = "col-sm-8 text-center">
+                <br>
+                <p>
+                    Come for some fresh exotic mangos.We have many different mangos here at TLH Supermarket! Try the sweet manilla mango or the sour and crunchy kent mango. 
+                </p>
+            </div>
+        </div>
+
+        <div class="row primary1">
+            <div class="col-sm-12 text-center">
+                <h2 style="Margin-top: 20px;">Bananas</h2>
+            </div>
+            
+            <div class = "col-sm-8 text-center">
+                <br>
+                <p>
+                    We always have a lot of bananas in stock! We carry exotic bananas too! Try our famous Thai bananas or baby manzanos. With our competitive prices, students will love this delicious snack.
+                </p>
+            </div>
+
+            <div class = "col-sm-4">
+                <img src="http://www.thailandbreeze.com/thai-bananas.jpg"/>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2 style="text-align: center;">Rice Noodles</h2>
+            </div>
+            <div class = "col-sm-4">
+                <img src="https://i.ytimg.com/vi/2BJnbSPb-V0/maxresdefault.jpg"/>
+            </div>
+            <div class = "col-sm-8 text-center">
+                <br>
+                <p>
+                    We carry over 50 types of rice and egg noodles, so you won't be dissapointed by the selection here!
+                </p>
+            </div>
+        </div>
+
+                <div class="row primary1">
+            <div class="col-sm-12 text-center">
+                <h2 style="Margin-top: 20px;">Vietnamese Ham</h2>
+            </div>
+            
+            <div class = "col-sm-8 text-center">
+                <br>
+                <p>
+                    Have you tried ham like this? Vietnamese ham is not only delicious, but easy to eat. Since they are already cooked, you just have to slice them however thick you want and you can enjoy it with just about anything. At TLH Supermarket, we like to Vietnamese ham with baguettes. Just add cucumbers and peppers, and you'll have a great sandwich.
+                </p>
+            </div>
+
+            <div class = "col-sm-4">
+                <img src="data:image/jpeg;base64,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"/>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="page-footer">
+        <div class="row">
+            <div class="col-sm-3">
+                <a>Everyday Hours: 8:00 AM - 6:30 PM</a>
+                <br><a>1199 E 12th St. Oakland, CA 94606</a>
+                <br><a>Phone: 510-123-4567</a>
+            </div>
+
+            <div class="col-sm-6">
+                <a href="index.html" class="navbar-brand">
+                    <img src="images/logo4.png" alt="TLH Supermarket" role="link" style="width:200px;">
+                </a>
+            </div>
+
+            <div class="col-sm-3">
+                <br><p>All rights reserved.</p>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TLH Supermarket Seafood</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="mustache.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <a href="index.html" class="col-sm-2 col-sm-3 navbar-brand">
+            <img src="images/logo4.png" alt="TLH Supermarket" role="link" style="width:200px;">
+        </a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse col-sm-6" id="navMenu">
+            <ul class = "navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a href="products_produce.html" class="nav-link" role="link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link" role="link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="best_sellers.html" class="nav-link" role="link">Best Sellers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="directions.html" class="nav-link" role="link">Directions</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link" role="link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link" role="link">Contact Us</a>
+                </li>                
+            </ul>
+        </div>
+
+    </nav> 
+    <!--end of Navigation bar-->
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-3 col-md-2">
+                
+                <div class="sidebar"><center>
+                <h3>Categories</h3>
+                <a href="products_produce.html">
+                    Produce
+                </a>
+                <br><a href="products_meats.html">
+                    Meats
+                </a>
+                <br><a href="products_seafood.html">
+                    Seafood
+                </a>
+                <br><a href="products_rice.html">
+                    Rice
+                </a><br><br>
+                </center></div>
+            </div>
+            
+            <div class="col-sm-9 col-md-6">
+                <center><h1>See our Seafood</h1></center>
+                <p>
+                    At TLH Supermarket, we recieve and process seafood daily. We aim to make the process fast and efficient to provide the freshest live seafood. Please come by and check out our huge selection!
+                </p>
+            </div>
+            
+            <div class="col-md-4">
+                <img class="productImg center" src="images\products\fishmonger.jpg"/>
+            </div>
+        </div>
+    
+        <script id="seafoodList" type="x-tmpl-mustache">
+            <div class="row">
+                {{#meat}}
+                    <div class="items1 col-sm-6 col-md-3 form-group"><center>
+                        <br>{{name}}<br><br>
+                        <img src="{{img}}"/>
+                        <br><br>
+                    </div>
+                {{/meat}}
+            </div>
+
+        </script>
+
+        <div id="target"></div>
+
+    </div>
+
+    <footer class="page-footer">
+        <div class="row">
+            <div class="col-sm-3">
+                <a>Everyday Hours: 8:00 AM - 6:30 PM</a>
+                <br><a>1199 E 12th St. Oakland, CA 94606</a>
+                <br><a>Phone: 510-123-4567</a>
+            </div>
+
+            <div class="col-sm-6">
+                <a href="index.html" class="navbar-brand">
+                    <img src="images/logo4.png" alt="TLH Supermarket" role="link" style="width:200px;">
+                </a>
+            </div>
+
+            <div class="col-sm-3">
+                <br><p>All rights reserved.</p>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
